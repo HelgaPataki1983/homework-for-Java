@@ -17,15 +17,17 @@ public class PinValidator {
             if (userTty != pin){
                 System.out.println("Incorrect, try again.");
             }
-             if (userTty == pin) {
+            else if ((userTty != pin) && i ==3) {
+                System.out.println("Sorry but you have been locked out.");
+                return;
+            }
+            else  {
                 System.out.println("Correct, welcome back.");
                 break;
             }
-             if ((userTty != pin) && i ==4) {
-                System.out.println("Sorry but you have been locked out.");
-                return;
+
         }
 
     }
 
-}}
+}
