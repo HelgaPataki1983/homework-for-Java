@@ -10,8 +10,10 @@ public class CalculateAverageArray {
         int sum = 0;
         float result = 0;
         for (int i = 0; i < array.length; i++) {
-             sum = sum + array[i];}
+             sum = sum + array[i];
+        }
         result = sum / array.length;
         System.out.println("The average is: " + result);
-        }}
+        }
+}
 

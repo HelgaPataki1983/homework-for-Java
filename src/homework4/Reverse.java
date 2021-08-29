@@ -4,8 +4,10 @@ package homework4;
 
 import java.util.Scanner;
 
-public class Reverse {
-    public static void main(String[] args) {
+public class Reverse
+{
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter numbers: ");
         String s = input.nextLine();
@@ -13,6 +15,7 @@ public class Reverse {
         {
             System.out.printf("%c ",s.charAt(i));
         };
-    }}
+    }
+}
 
 

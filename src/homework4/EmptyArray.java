@@ -7,12 +7,15 @@ package homework4;
 import java.util.Scanner;
 
 public class EmptyArray {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter any qty of elements: ");
         int[] array = new int[input.nextInt()];
-                for(int i = 0; i < array.length; i++){
-                    array[i] = i + 1;
-                    System.out.printf(" %d", array[i]);
-                }
-    }}
+        for(int i = 0; i < array.length; i++)
+        {
+            array[i] = i + 1;
+            System.out.printf(" %d", array[i]);
+        }
+    }
+}

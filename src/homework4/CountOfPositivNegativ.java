@@ -27,8 +27,10 @@ import java.util.Scanner;
         }
             System.out.println("You entered" + " " + positive + " " + "positive, and" + " " + negative + " " + "negative, and" + " " + zero);}}*/
 
-public class CountOfPositivNegativ {
-    public static void main(String[] args) {
+public class CountOfPositivNegativ
+{
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
                int positive = 0;
         int negative = 0;

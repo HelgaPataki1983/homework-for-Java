@@ -3,13 +3,17 @@ package homework4;
 
 import java.util.Scanner;
 
-public class EmptyArray1 {
-    public static void main(String[] args) {
+public class EmptyArray1
+{
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter any qty of elements: ");
         int[] array = new int[input.nextInt()];
-        for(int i = 0; i < array.length; i++){
+        for(int i = 0; i < array.length; i++)
+        {
             array[i] = (int) (Math.random() * 100);
             System.out.printf(" %d", array[i]);
         }
-    }}
+    }
+}

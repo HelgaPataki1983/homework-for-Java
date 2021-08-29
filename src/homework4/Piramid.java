@@ -19,19 +19,23 @@ rows that was input by user.
 
 import java.util.Scanner;
 
-public class Piramid {
-    public static void main(String[] args) {
+public class Piramid
+{
+    public static void main(String[] args)
+    {
         char a = '#';
-
         Scanner input = new Scanner(System.in);
         System.out.println("Enter max number of rows: ");
         int row = input.nextInt();
-        if (row <= 0) {
+        if (row <= 0)
+        {
             System.out.println("You entered not positive value");
             return;
         }
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < i + 2; j++){
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < i + 2; j++)
+            {
                 System.out.print(a);
 
             }

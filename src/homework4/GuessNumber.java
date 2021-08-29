@@ -9,7 +9,7 @@ If the user's guess is lower than the random number, the program should display 
 The program should use a loop that repeats until the user correctly guesses the random number.
         To generate a random number between 0 and 10 use the following method:
         int number = (int) (Math.random() * 10) + 1;*/
-public class GuessNumber {
+/* public class GuessNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int guess;
@@ -37,8 +37,34 @@ public class GuessNumber {
         while (true);
         System.out.println("Good bye");
         }
+    }*/
+public class GuessNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        int guess;
+        int a = 0;
+        int b = 10;
+        int random = a + (int) (Math.random() * b);
+        do {
+            System.out.println("Enter number ");
+            guess = input.nextInt();
+            if (random == guess) {
+                System.out.println("You are right, yoohhoo");
 
+            }
 
+            else if (guess < random) {
+                System.out.println("Too low, try again. ");
 
+            }
+            else  {
+                System.out.println("Too High, try again. ");
+
+            }
+
+        }
+        while (random != guess);
     }
-
+}

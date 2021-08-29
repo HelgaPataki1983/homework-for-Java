@@ -6,18 +6,23 @@ package homework4;
 
 import java.util.Scanner;
 
-public class PinValidator {
-    public static void main(String[] args) {
+public class PinValidator
+{
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         int pin = 123;
         int counter = 3;
-        for (int i = 0; i <= 3; i++){
+        for (int i = 0; i <= 3; i++)
+        {
             System.out.println("Please, enter pin");
             int userTty = input.nextInt();
-            if (userTty != pin){
+            if ((userTty != pin) && i ==3) // it didnt work if stay in a first position. the system locked from the first try.
+            {
                 System.out.println("Incorrect, try again.");
             }
-            else if ((userTty != pin) && i ==3) {
+            else if (userTty != pin)
+            {
                 System.out.println("Sorry but you have been locked out.");
                 return;
             }
