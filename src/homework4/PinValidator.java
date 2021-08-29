@@ -13,7 +13,7 @@ public class PinValidator
         Scanner input = new Scanner(System.in);
         int pin = 123;
         int counter = 3;
-        for (int i = 0; i <= 3; i++)
+        for (int i = 1; i <= 3; i++)
         {
             System.out.println("Please, enter pin");
             int userTty = input.nextInt();
