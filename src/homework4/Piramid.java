@@ -18,12 +18,15 @@ rows that was input by user.
         #########*/
 
 import java.util.Scanner;
-
+import static homework5.OperationsWithIntArray.stairs;
 public class Piramid
 {
-    public static void main(String[] args)
-    {
-        char a = '#';
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter max number of rows: ");
+        stairs(input.nextInt());
+
+        /*char a = '#';
         Scanner input = new Scanner(System.in);
         System.out.println("Enter max number of rows: ");
         int row = input.nextInt();
@@ -39,11 +42,11 @@ public class Piramid
                 System.out.print(a);
 
             }
-            System.out.println();
+            System.out.println();*/
 
         }
     }
-}
+
 
 
 

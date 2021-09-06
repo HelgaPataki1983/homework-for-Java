@@ -3,17 +3,16 @@ package homework4;
         Example array: {3, 5, 7}
         Expected output:
         The average is: 5.0*/
+import java.util.Scanner;
 
+import static homework5.OperationsWithIntArray.averOfArray;
 public class CalculateAverageArray {
     public static void main(String[] args) {
-        int [] array = {5,7,9};
-        int sum = 0;
-        float result = 0;
-        for (int i = 0; i < array.length; i++) {
-             sum = sum + array[i];
-        }
-        result = sum / array.length;
-        System.out.println("The average is: " + result);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please input the  array: ");
+        int[] arrayOf = new int[input.nextInt()];
+        float resultt = averOfArray(new int[input.nextInt()]);
+        System.out.println("The average is: " + resultt);
         }
 }
 
