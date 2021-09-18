@@ -4,14 +4,15 @@ package homework6;
         String substring = “wo” -> 2*/
 public class CountsElloWoSubstring {
     public static void main(String[] args) {
-        String a = "Hello world, hello java, hello homework";
-        System.out.println(countNumberOfElloWo(a));
-        return;
+        String initial = "Hello world, hello java, hello homework";
+        String substring = "ello";
+        System.out.println(countNumberOfElloWo(initial, substring));
+
     }
-        public static int countNumberOfElloWo(String a){
+        public static int countNumberOfElloWo(String a, String substring){
             int result = 0;
             int shift  = 0;
-            while ((shift  = a.indexOf("ello"))>=0) {
+            while ((shift  = a.indexOf(substring))>=0) {
                 result++;
                 a = a.substring(shift+1);
 
