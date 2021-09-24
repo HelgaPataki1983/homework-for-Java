@@ -16,7 +16,7 @@ public class Task5_1 {
 
         System.out.println(task5 == task5_1);
         System.out.println(task5.equals(task5_1));
-        //System.out.println(task5.hashCode(task5_1));
+        //System.out.println(task5.hashCode(task5_1)); Не получается применить для стринги
 
     }
 
