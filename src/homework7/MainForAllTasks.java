@@ -32,6 +32,11 @@ public class MainForAllTasks {
         System.out.println(task5.equals(task5_1));
         //System.out.println(task5.hashCode(task5_1));
 
+        Task5_1 task51 = new Task5_1("pretty", "agly");//
+        Task5_1 task511 = new Task5_1("pretty", "agly");
+        System.out.println(task51 == task511);
+        System.out.println(task51.equals(task511));
+
 
     }
 
