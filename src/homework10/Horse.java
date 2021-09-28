@@ -9,7 +9,7 @@ public class Horse extends Animal{
 
     @Override
     public void makeNoice() {
-        super.makeNoice();
+        System.out.println("Horse is making i-go-go");
     }
 
     @Override

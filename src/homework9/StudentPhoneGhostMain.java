@@ -18,11 +18,14 @@ public class StudentPhoneGhostMain {
         Student student3 = new Student("Igor","Poloz", "AQA", 12);
         Student[] students = {student,student1,student2,student3}; // г) Создать массив типа Student, содержащий объекты класса Student и Aspirant.
         // Вызвать метод getScholarship() для каждого элемента массива, выводить в консоль имя студента и размер его стипендии.
-        System.out.println(student.getFirstName() + " " + " have a scholarship amount: " + student.getScholarship(2));
+        for (Student stud: students) {
+            System.out.println(stud.getFirstName(stud) + " " + " have a scholarship amount: " + stud.getScholarship());
+        }
+        /*System.out.println(student.getFirstName() + " " + " have a scholarship amount: " + student.getScholarship(2));
         System.out.println(student1.getFirstName() + " " + " have a scholarship amount: " + student1.getScholarship(3));
         System.out.println(student2.getFirstName() + " " + " have a scholarship amount: " + student2.getScholarship(5));
         System.out.println(student3.getFirstName() + " " + " have a scholarship amount: " + student3.getScholarship(12));
-
+*/
         Ghost ghost = new Ghost();
         System.out.println(ghost.getColor());
 

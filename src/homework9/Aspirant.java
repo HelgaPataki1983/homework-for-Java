@@ -6,20 +6,17 @@ public class Aspirant extends Student{
     }
 
     @Override
-    public int getScholarship(double averageMark) { //Переопределить этот метод в классе Aspirant.
+    public int getScholarship() { //Переопределить этот метод в классе Aspirant.
                                                     // Если средняя оценка аспиранта равна 5, то сумма 200 грн, иначе 180.
-        int Scholarship=0;
-        if (averageMark== 5){
-            Scholarship=200;
+         if (getAverageMark()== 5){
+            return 200;
         }
         else {
-            Scholarship=180;
+            return 180;
         }
-        return Scholarship;
-    }
-
+  }
     @Override
-    public String getFirstName() {
-        return super.getFirstName();
+    public String getFirstName(Student stud) {
+        return super.getFirstName(stud);
     }
 }
