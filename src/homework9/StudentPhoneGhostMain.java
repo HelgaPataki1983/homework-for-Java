@@ -40,7 +40,7 @@ public class StudentPhoneGhostMain {
             Bicycle bicycle = new RoadBicycle(12);
             Bicycle bicycle1 = new RoadBicycle(15);
             Vehicle car = new Car("Sedan", "Manual gearbox", 350);
-            System.out.println(car.);
+            System.out.println(car);
         }
 
 
