@@ -1,11 +1,8 @@
 package homework10;
 
-public class Vet extends Animal{
-   public Vet(String food, String location) {
-      super(food, location);
-   }
+public class Vet {
 
-   public void treatAnimal(Animal animal){
-      System.out.println(animal.getFood());
+    public void treatAnimal(Animal anim){
+      System.out.println("My animal eat " + anim.getFood() + " and leave in the " + anim.getLocation());
    }
 }

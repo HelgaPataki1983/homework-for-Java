@@ -1,8 +1,10 @@
 package homework9;
 
 public class Aspirant extends Student{
-    public Aspirant(String firstName, String lastName, String group, double averageMark) {
-        super(firstName, lastName, group, averageMark);
+private String scientificWork;
+    public Aspirant(String firstName, String lastName, String group, double averageMark, String scientificWork ) {
+        super(firstName, lastName, group, averageMark );
+        this.scientificWork = scientificWork;
     }
 
     @Override
@@ -15,8 +17,4 @@ public class Aspirant extends Student{
             return 180;
         }
   }
-    @Override
-    public String getFirstName(Student stud) {
-        return super.getFirstName(stud);
     }
-}

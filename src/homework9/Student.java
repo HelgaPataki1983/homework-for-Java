@@ -26,7 +26,10 @@ public class Student {
         }
     }
 
-    public String getFirstName(Student stud) {
+    /*public int getScholarship() {
+        return (getAverageMark()==5)? 200 : 180;// применение тернарного оператора, до двоеточия тру, после двоеточия фалс
+    }*/
+    public String getFirstName() {
         return this.firstName;
     }
 }

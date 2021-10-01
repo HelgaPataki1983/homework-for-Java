@@ -3,8 +3,9 @@ package homework10;
 public class Dog extends Animal{
     private String dogsName;
 
-    public Dog(String food, String location) {
+    public Dog(String food, String location,String dogsName) {
         super(food, location);
+        this.dogsName = dogsName;
     }
 
     @Override
@@ -15,5 +16,9 @@ public class Dog extends Animal{
     @Override
     public void eat() {
         super.eat();
+    }
+
+    public String getDogsName() {
+        return dogsName;
     }
 }

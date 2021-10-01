@@ -19,9 +19,7 @@ public abstract class Animal {
         this.location = location;
     }
 
-    public void makeNoice() {
-        System.out.println("Animal is making noice");
-    }
+    public abstract void makeNoice();
     public void eat() {
         System.out.println("Animal is eating");
     }
