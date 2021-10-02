@@ -13,17 +13,18 @@ protected int gear;
     public Bicycle(){}
 
     @Override
-    void speedUp(int value) {
+    String speedUp(int value) {
         System.out.println("Bicycle have a specific speed up  " + value + " m/sec");
+        return null;
     }
 
     @Override
-    void applyBreak(int value) {
-        System.out.println("Bicycle have a specific apply break  " + value);
+    String applyBreak() {
+        return "Bicycle have a specific apply break  ";
     }
 
     @Override
-    public void move() {
+    public String move() {
         System.out.println("Bicycle can move");
 
     }

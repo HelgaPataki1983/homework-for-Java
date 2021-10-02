@@ -19,9 +19,10 @@ public abstract class Vehicle {
     int speed;
     private String model;
 
-    void speedUp(int value){
+    String speedUp(int value){
         System.out.println("Vehicle have a general speed up approximately " + value);
 
+        return null;
     };
     void applyBreak(int value){
         System.out.println("Vehicle have a general apply break approximately " + value);
@@ -33,7 +34,7 @@ public abstract class Vehicle {
     public String getModel() {
         return model;
     }
-    abstract public void move();
+    abstract public String move();
     final void stop(){
         System.out.println("Vehicle can stop");
     }

@@ -14,7 +14,7 @@ public class Helicopter extends Vehicle{
     }
 
     @Override
-    public void move() {
+    public String move() {
         System.out.println("Helicopter can move");
     }
     @Override
