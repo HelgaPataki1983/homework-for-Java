@@ -1,4 +1,4 @@
-package homework10;
+package homework10Vehicle;
 
 public class MountainBicycle extends Bicycle {
     private int seatHeight;

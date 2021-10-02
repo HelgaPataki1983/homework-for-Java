@@ -1,4 +1,4 @@
-package homework10;
+package homework10Animal;
 /*Создать абстрактный класс Animal и расширяющие его классы Dog, Cat, Horse.
         Класс Animal содержит переменные food, location и методы makeNoise, eat, sleep.
         Метод sleep, например, может выводить на консоль "Животное спит".

@@ -1,4 +1,6 @@
-package homework10;
+package homework10Animal;
+
+import homework10Animal.Animal;
 
 public class Vet {
 

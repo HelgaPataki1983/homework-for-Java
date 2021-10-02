@@ -1,4 +1,4 @@
-package homework10;
+package homework10Vehicle;
 
 import java.util.Objects;
 

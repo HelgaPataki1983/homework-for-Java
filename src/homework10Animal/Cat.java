@@ -1,6 +1,8 @@
-package homework10;
+package homework10Animal;
 
-public class Cat extends Animal{
+import homework10Animal.Animal;
+
+public class Cat extends Animal {
     private String catsName;
 
     public Cat(String food, String location, String catsName) {

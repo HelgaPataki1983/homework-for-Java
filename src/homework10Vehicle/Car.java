@@ -1,4 +1,4 @@
-package homework10;
+package homework10Vehicle;
 
 public class Car extends Vehicle {
     static String carType;

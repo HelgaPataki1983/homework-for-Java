@@ -1,4 +1,4 @@
-package homework10;
+package homework10Vehicle;
 
 public abstract class Bicycle extends Vehicle {
 public  int id;

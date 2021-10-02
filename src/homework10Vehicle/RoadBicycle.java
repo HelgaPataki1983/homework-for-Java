@@ -1,4 +1,4 @@
-package homework10;
+package homework10Vehicle;
 
 public class RoadBicycle extends Bicycle {
 

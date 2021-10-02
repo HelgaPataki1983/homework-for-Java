@@ -1,4 +1,4 @@
-package homework10;
+package homework10Vehicle;
 /*.
 Write a program which will have:
 3 level of inheritance (classes similar to the image below) with described variables and methods
