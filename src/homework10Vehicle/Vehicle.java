@@ -34,7 +34,7 @@ public abstract class Vehicle {
     public String getModel() {
         return model;
     }
-    abstract public String move();
+    abstract public void move();
     final void stop(){
         System.out.println("Vehicle can stop");
     }

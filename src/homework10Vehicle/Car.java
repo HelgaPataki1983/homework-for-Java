@@ -12,8 +12,10 @@ public class Car extends Vehicle {
 
 
     @Override
-    public String move() {
-        return "Car can move";
+    public void move() {
+        System.out.println("Car can move");
+
+
     }
 
 }

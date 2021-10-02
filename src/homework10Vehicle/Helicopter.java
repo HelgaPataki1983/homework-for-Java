@@ -8,22 +8,22 @@ public class Helicopter extends Vehicle{
     int tankSize;
 
     public Helicopter(int amountOfPassengers, int maxHeight, int tankSize) {
-        this.amountOfPassengers = amountOfPassengers;
-        this.maxHeight = maxHeight;
-        this.tankSize = tankSize;
+        this.amountOfPassengers = 43;
+        this.maxHeight = 150;
+        this.tankSize = 12;
     }
 
     @Override
-    public String move() {
+    public void move() {
         System.out.println("Helicopter can move");
     }
     @Override
     public String toString() {
-        return "Helicopter{" +
-                "amountOfPassengers=" + amountOfPassengers +
+        return "Helicopter has " +
+                "amountOfPassengers =" + amountOfPassengers +
                 ", maxHeight=" + maxHeight +
-                ", tankSize=" + tankSize +
-                '}';
+                ", tankSize=" + tankSize
+                ;
     }
 
     @Override

@@ -19,12 +19,13 @@ protected int gear;
     }
 
     @Override
-    String applyBreak() {
-        return "Bicycle have a specific apply break  ";
+    public void applyBreak(int value) {
+        System.out.println("Bicycle have a specific apply break  " + value);
+
     }
 
     @Override
-    public String move() {
+    public void move() {
         System.out.println("Bicycle can move");
 
     }
