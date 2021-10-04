@@ -15,7 +15,7 @@ Write a program which will have:
         5.	Set some values to variables of Car. Print them out in console.
 */
 
-public abstract class Vehicle {
+public abstract class Vehicle implements EverythingOnWheels {
     int speed;
     private String model;
 
@@ -37,5 +37,10 @@ public abstract class Vehicle {
     abstract public void move();
     final void stop(){
         System.out.println("Vehicle can stop");
+    }
+
+    @Override
+    public void haveAFourWheels(String var) {
+        System.out.println("it also has a 4 wheels");
     }
 }

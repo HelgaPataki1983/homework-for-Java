@@ -38,4 +38,11 @@ public class Helicopter extends Vehicle{
     public int hashCode() {
         return Objects.hash(amountOfPassengers, maxHeight, tankSize);
     }
+
+    @Override
+    public void takePassengers(int amountOfPassengers) {
+        System.out.println("i can take from 2 to 4 passengers");
+
+
+    }
 }
