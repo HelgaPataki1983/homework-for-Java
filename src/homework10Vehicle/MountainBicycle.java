@@ -13,4 +13,15 @@ public class MountainBicycle extends Bicycle {
     void changeGear() {
         System.out.println("Road bicycle change gear every year");
     }
+
+    @Override
+    public void takePassengers() {
+        System.out.println("i can take only one passenger");
+
+    }
+
+    @Override
+    public void haveAFourWheels() {
+        System.out.println("Only for kids bicycle");
+    }
 }

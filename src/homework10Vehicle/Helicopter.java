@@ -40,7 +40,7 @@ public class Helicopter extends Vehicle{
     }
 
     @Override
-    public void takePassengers(int amountOfPassengers) {
+    public void takePassengers() {
         System.out.println("i can take from 2 to 4 passengers");
 
 

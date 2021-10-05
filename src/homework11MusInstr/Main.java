@@ -6,12 +6,11 @@ public class Main {
         MusInstrument instrument1 = new Drum("medium");
         MusInstrument instrument2 = new Tube(50);
         MusInstrument[] instruments = {instrument, instrument1, instrument2};
-        // System.out.println(Drum.play());// не могу ни из одного класса метод вызвать , ни из интерфейса , и из остальных,
-        {
-            for (MusInstrument instrumen:instruments) {
+        instrument1.play();// не могу ни из одного класса метод вызвать , ни из интерфейса , и из остальных,
+         for (MusInstrument instrumen:instruments) {
                 instrumen.play();
             }
         }
     }
-}
+
 

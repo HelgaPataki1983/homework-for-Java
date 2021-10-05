@@ -3,13 +3,12 @@ package homework10Vehicle;
 public class Car extends Vehicle {
     static String carType;
     static String transmission;
-    private  int pass;
 
-    public Car(String carType, String transmission, int speed, int pass) {
+    public Car(String carType, String transmission, int speed) {
         this.carType = carType;
         this.transmission = "Manual gearbox";
         this.speed = 55;
-        this.pass = pass;
+
     }
 
     @Override
@@ -18,7 +17,7 @@ public class Car extends Vehicle {
     }
 
      @Override
-    public void takePassengers(int pass) {
+    public void takePassengers() {
          System.out.println("i can take from 2 to 7 passengers");
 
 

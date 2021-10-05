@@ -40,7 +40,7 @@ public abstract class Vehicle implements EverythingOnWheels {
     }
 
     @Override
-    public void haveAFourWheels(String var) {
+    public void haveAFourWheels() {
         System.out.println("it also has a 4 wheels");
     }
 }
