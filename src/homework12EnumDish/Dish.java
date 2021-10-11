@@ -14,9 +14,10 @@ public enum Dish {
         }
     },
     GALUSHKI(25, 1, "galushki") {
+        String f = "flour, water, solt";
         @Override
         String ingredients() {
-            return "flour, water, solt";
+            return f;
         }
     },
     DERUNY_S_GRYBY(30, 1, "deruny") {
@@ -36,11 +37,21 @@ public enum Dish {
         String ingredients() {
             return "flour, egg, milk, tvorog, cream";
         }
+
+        @Override
+        public String getCategory() {
+            return "Desert";
+        }
     },
     ZAPEKANKA(50, 2, "zapekanka") {
         @Override
         String ingredients() {
             return " flour, egg, milk, tvorog, cream";
+        }
+
+        @Override
+        public String getCategory() {
+            return "Desert";
         }
     },
     MOROZIVO(25, 1, "morozivo") {
@@ -48,8 +59,18 @@ public enum Dish {
         String ingredients() {
             return "milk, cream, vanilla";
         }
+
+        @Override
+        public String getCategory() {
+            return "Desert";
+        }
     },
     DRY_WHITE_WINE(25,1,"dry_white_wine"){
+        @Override
+        public String getCategory() {
+            return "Alcohol";
+        }
+
         @Override
         String ingredients() {
             return "Alcohol";
@@ -58,12 +79,22 @@ public enum Dish {
     },
     DRY_RED_WINE(25,1,"dry_red_wine"){
         @Override
+        public String getCategory() {
+            return "Alcohol";
+        }
+
+        @Override
         String ingredients() {
             return "Alcohol";
 
         }
     },
     GORILKA(20,1,"gorilka"){
+        @Override
+        public String getCategory() {
+            return "Alcohol";
+        }
+
         @Override
         String ingredients() {
             return "Alcohol";
@@ -86,16 +117,6 @@ public enum Dish {
 
     abstract String ingredients();
 
-
-    public String getCategory(String category) {
-        if (category == null) {
-            this.category = "Main Dish";
-        } else {
-            this.category = category;
-        }
-        return this.category;
-    }
-
     public void print(String text) {
         System.out.println(text);
     }
@@ -112,4 +133,7 @@ public enum Dish {
         return preparationTime;
     }
 
+    public String getCategory() {
+        return "Main dish";
+    }
 }

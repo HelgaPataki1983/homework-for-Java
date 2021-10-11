@@ -3,7 +3,7 @@ package homework12EnumDish;
 public class Restaurant   {
     public void printMenu(){
         for (Dish dish: Dish.values()){
-            System.out.println(dish.getCategory(null) + ":" + dish.getName() + dish.ingredients());
+            System.out.println(dish.getCategory() + ":" + dish.getName() + " "+ dish.ingredients());
         }
     }
     public void selectDish(Dish dish){
