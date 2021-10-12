@@ -9,33 +9,16 @@ public class AtelierMain {
         Clothes[] clothess = {menClothes,womanClothes, clothes, clothes1};
 
 
-        AtelierMain atelier = new AtelierMain();
-        menClothes.dressUpMan(clothess);
-        womanClothes.dressUpWoman(clothess);
-        {
-            for (Clothes cl : clothess) {
-                if (cl instanceof MenClothes){
-                    System.out.print(cl.getName() +"\n" + "Size "+  cl.getSize() + "(euro size: " + cl.size.euroSize + ", "+ cl.size.getDescription()+ ")"+ "\n"+"Cost is - " + cl.getCost() +"$\n" + "Color is - " +cl.getColor() + "\n"+ "------------------------------");
-                    System.out.println();
-                } else if (cl instanceof WomanClothes){
-                    System.out.print(cl.getName() +"\n" + "Size "+  cl.getSize() + "(euro size: " + cl.size.euroSize + ", "+ cl.size.getDescription()+ ")"+ "\n"+"Cost is - " + cl.getCost() +"$\n" + "Color is - " +cl.getColor() + "\n"+ "------------------------------");
-                    System.out.println();//не работает второе условие, не пойму почему, и я не смогла вытянуть
-                    //В отдельном классе создать массив, содержащий все типы одежды
-                    // (перед этим создать несколько объектов одежды разных классов - и это не пойму как реализовать, если он не наследник ,и как в мейн в метод масив передать если он в другом класе
-                }
+        Atelier atelier = new Atelier();
+        atelier.dressMan(clothess);
+        atelier.dressWoman(clothess);
+
+
 
 
             }
 
             }
-        }
-    }
 
-/* if (anim instanceof Cat) {
-         animalType = "cat";
-         } else if (anim instanceof Dog){
-         animalType = "dog";
-         }
-         else if (anim instanceof Horse){
-         animalType = "horse";*/
+
 

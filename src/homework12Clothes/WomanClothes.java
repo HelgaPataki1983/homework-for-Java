@@ -1,5 +1,5 @@
 package homework12Clothes;
+    public interface WomanClothes {
 
-public interface WomanClothes {
-    abstract public void dressUpWoman(Clothes[] t);
+    abstract public void dressUpWoman();
 }

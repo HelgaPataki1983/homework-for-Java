@@ -4,15 +4,14 @@ public class TShirt extends Clothes implements MenClothes, WomanClothes {
     String name;
     public TShirt(int cost, String color, String name,Size size) {
         super(cost, color, name, size);
-        this.name = name;
     }
 
     @Override
-    public void dressUpMan(Clothes[] t) {
+    public void dressUpMan() {
     }
 
     @Override
-    public void dressUpWoman(Clothes[] t) {
+    public void dressUpWoman() {
     }
 
     public String getName() {

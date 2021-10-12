@@ -1,7 +1,7 @@
 package homework12Clothes;
 
 abstract public class Clothes {
-    public Size size;
+    private Size size;
     private int cost;
     private String color;
     private String name;
@@ -24,7 +24,5 @@ abstract public class Clothes {
     }
     public String getName() { return name; }
 
-    public abstract void dressUpMan(Clothes[] text);
-    public abstract void dressUpWoman(Clothes[] t);
-}
+    }
 
