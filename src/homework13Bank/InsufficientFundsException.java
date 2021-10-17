@@ -1,7 +1,8 @@
-package homework13Bank;
-/*
 
-public class InsufficientFundsException {
+package homework13Bank;
+
+
+public class InsufficientFundsException extends Exception {
     private int amount;
 
     InsufficientFundsException(String message, int amount) {
@@ -13,5 +14,7 @@ public class InsufficientFundsException {
         return this.amount;
     }
 }
-*/
+
+
+
 
