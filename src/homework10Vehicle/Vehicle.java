@@ -43,4 +43,6 @@ public abstract class Vehicle implements EverythingOnWheels {
     public void haveAFourWheels() {
         System.out.println("it also has a 4 wheels");
     }
+
 }
+
