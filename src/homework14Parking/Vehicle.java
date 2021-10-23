@@ -5,10 +5,20 @@ public  class Vehicle {
     private String color;
     private String carNumber;
 
-    public Vehicle(String type, String color, String carNumber) {
+    public Vehicle(String mark, String color, String carNumber) {
         this.mark = mark;
         this.color = color;
         this.carNumber = carNumber;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+    public String getColor() {
+        return color;
+    }
+    public String getCarNumber() {
+        return carNumber;
     }
 
     @Override
