@@ -1,6 +1,6 @@
 package Calculator;
 
-public class Calculator {
+public class Calculatorr {
     public int sum(int a, int b){
         return a+b;
     }
