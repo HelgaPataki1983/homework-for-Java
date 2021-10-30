@@ -15,19 +15,18 @@ public class Main {
         Car porche = new Car("porche", "white", "AA1113","car");
         Bike suzuki = new Bike("suzuki", "yellow", "AA1114");
 
-        List<Vehicle> autorizedObjects = new ArrayList<>();
-        List<homework14Parking.Vehicle> allObjects = new ArrayList<>();
+        List<Vehicle> allObjects = new ArrayList<>();
 
-        allObjects.add(new Car("volvo","black","AA1111","car"));
-        allObjects.add(new Bike("yamaha", "black", "AA1112"));
-        allObjects.add(new Car("mersedes", "black", "AA0000","lorry"));
-        allObjects.add(new Car("someLorry", "white", "AA0001","lorry"));
-        allObjects.add(new Car("someLorry1", "white", "AA0002","lorry"));
-        allObjects.add(new Car("someLorry1", "white", "AA0002","lorry"));
-        allObjects.add(new Car("porche", "white", "AA1113","car"));
-        allObjects.add(new Bike("suzuki", "yellow", "AA1114"));
+        allObjects.add(volvo);
+        allObjects.add(yamaha);
+        allObjects.add(mersedes);
+        allObjects.add(someLorry);
+        allObjects.add(someLorry1);
+        allObjects.add(porche);
+        allObjects.add(suzuki);
 
         parking.autorizedVehicle(allObjects);
+        //parking.permitedVehicle(allObjects);
 
 
     }

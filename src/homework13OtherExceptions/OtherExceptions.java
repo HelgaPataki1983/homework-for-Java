@@ -1,10 +1,10 @@
-/*
+
 
 package homework13OtherExceptions;
 
 public class OtherExceptions {
     public String zero;
-вызвать у переменной метод
+//вызвать у переменной метод
 
 
     private boolean isitRaining;
@@ -35,6 +35,6 @@ public class OtherExceptions {
 
 
 
-}*/
+}
 
 

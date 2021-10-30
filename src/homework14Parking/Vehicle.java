@@ -1,5 +1,7 @@
 package homework14Parking;
 
+import java.util.Objects;
+
 public  class Vehicle {
     private String mark;
     private String color;
@@ -22,12 +24,15 @@ public  class Vehicle {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return color.equals(vehicle.color) && carNumber.equals(vehicle.carNumber);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public int hashCode() {
+        return Objects.hash(color, carNumber);
     }
 }
